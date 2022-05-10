@@ -42,26 +42,17 @@ import jakarta.validation.constraints.*;
         pluginIconImageUrl = "bower_components/componenttemplate/componenttemplatelogo.jpg",
         pluginOriginalHomepage = "https://jquery.com",
         pluginDownloadUrl = "https://jwebmp.com/?p=ComponentTemplate")
+
 @TsDependency(value = "jquery",version = "^3.6.0")
-@NgScript("node_modules/jquery/dist/jquery.min.js")
+@TsDevDependency(value = "@types/jquery",version = "*")
+@NgScript(value = "node_modules/jquery/dist/jquery.js",sortOrder = 1)
 
 public class JQueryPageConfigurator
         implements IPageConfigurator<JQueryPageConfigurator> {
-    /**
-     * The default page configurator for componenttemplate
-     */
     public JQueryPageConfigurator() {
         //Nothing Needed
     }
 
-    /**
-     * The 3 meta tags *must* come first in the head; any other head content must come *after* these tags
-     * <p>
-     * HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries WARNING: Respond.js doesn't work if you view the page
-     * via file://
-     *
-     * @return
-     */
     @NotNull
     @Override
     public Page<?> configure(Page<?> page) {
