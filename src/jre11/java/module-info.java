@@ -4,7 +4,7 @@ import com.jwebmp.plugins.jquery.*;
 
 module com.jwebmp.plugins.jquery {
 	
-	requires transitive com.jwebmp.core.angular;
+	requires transitive com.jwebmp.core.base.angular.client;
 	
 	provides IPageConfigurator with JQueryPageConfigurator;
 	provides IGuiceScanModuleInclusions with JQueryInclusionModule;

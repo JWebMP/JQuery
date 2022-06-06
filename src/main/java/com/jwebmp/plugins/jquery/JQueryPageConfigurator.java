@@ -17,8 +17,8 @@
 package com.jwebmp.plugins.jquery;
 
 import com.jwebmp.core.*;
-import com.jwebmp.core.base.angular.services.annotations.*;
-import com.jwebmp.core.base.angular.services.annotations.angularconfig.*;
+import com.jwebmp.core.base.angular.client.annotations.angularconfig.*;
+import com.jwebmp.core.base.angular.client.annotations.typescript.*;
 import com.jwebmp.core.plugins.*;
 import com.jwebmp.core.services.*;
 import jakarta.validation.constraints.*;
@@ -43,9 +43,9 @@ import jakarta.validation.constraints.*;
         pluginOriginalHomepage = "https://jquery.com",
         pluginDownloadUrl = "https://jwebmp.com/?p=ComponentTemplate")
 
-@TsDependency(value = "jquery",version = "^3.6.0")
+@TsDependency(value = "jquery", version = "^3.6.0")
 @TsDevDependency(value = "@types/jquery",version = "*")
-@NgScript(value = "node_modules/jquery/dist/jquery.js",sortOrder = 1)
+@NgScript(value = "node_modules/jquery/dist/jquery.js", sortOrder = 1)
 
 public class JQueryPageConfigurator
         implements IPageConfigurator<JQueryPageConfigurator> {
