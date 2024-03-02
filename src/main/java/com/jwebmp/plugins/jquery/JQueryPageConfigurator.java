@@ -43,8 +43,8 @@ import jakarta.validation.constraints.*;
         pluginOriginalHomepage = "https://jquery.com",
         pluginDownloadUrl = "https://jwebmp.com/?p=ComponentTemplate")
 
-@TsDependency(value = "jquery", version = "^3.6.0")
-@TsDependency(value = "jquery-migrate", version = "^3.4.0")
+@TsDependency(value = "jquery", version = "^3.7.1")
+@TsDependency(value = "jquery-migrate", version = "^3.4.1")
 @TsDevDependency(value = "@types/jquery", version = "*")
 @NgScript(value = "node_modules/jquery/dist/jquery.js", sortOrder = 1)
 @NgScript(value = "node_modules/jquery-migrate/dist/jquery-migrate.js", sortOrder = 2)
