@@ -45,24 +45,28 @@ import jakarta.validation.constraints.*;
 
 @TsDependency(value = "jquery", version = "^3.6.0")
 @TsDependency(value = "jquery-migrate", version = "^3.4.0")
-@TsDevDependency(value = "@types/jquery",version = "*")
+@TsDevDependency(value = "@types/jquery", version = "*")
 @NgScript(value = "node_modules/jquery/dist/jquery.js", sortOrder = 1)
 @NgScript(value = "node_modules/jquery-migrate/dist/jquery-migrate.js", sortOrder = 2)
 
 public class JQueryPageConfigurator
-        implements IPageConfigurator<JQueryPageConfigurator> {
-    public JQueryPageConfigurator() {
+        implements IPageConfigurator<JQueryPageConfigurator>
+{
+    public JQueryPageConfigurator()
+    {
         //Nothing Needed
     }
 
     @NotNull
     @Override
-    public Page<?> configure(Page<?> page) {
+    public IPage<?> configure(IPage<?> page)
+    {
         return page;
     }
 
     @Override
-    public boolean enabled() {
+    public boolean enabled()
+    {
         return true;
     }
 
