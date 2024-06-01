@@ -1,12 +1,12 @@
-import com.guicedee.guicedinjection.interfaces.*;
-import com.jwebmp.core.services.*;
-import com.jwebmp.plugins.jquery.*;
+import com.guicedee.guicedinjection.interfaces.IGuiceScanModuleInclusions;
+import com.jwebmp.core.services.IPageConfigurator;
+import com.jwebmp.plugins.jquery.JQueryInclusionModule;
+import com.jwebmp.plugins.jquery.JQueryPageConfigurator;
 
 module com.jwebmp.plugins.jquery {
 
     requires transitive com.jwebmp.core.base.angular.client;
     requires com.jwebmp.client;
-    requires com.jwebmp.core;
 
     provides IPageConfigurator with JQueryPageConfigurator;
     provides IGuiceScanModuleInclusions with JQueryInclusionModule;

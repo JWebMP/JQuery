@@ -16,8 +16,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp.core</groupId>
-            <artifactId>jwebmp-core</artifactId>
+            <groupId>com.jwebmp.client</groupId>
+            <artifactId>jwebmp-client</artifactId>
         </dependency>
 
         <dependency>

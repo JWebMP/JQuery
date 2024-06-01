@@ -16,12 +16,12 @@
  */
 package com.jwebmp.plugins.jquery;
 
-import com.jwebmp.core.*;
-import com.jwebmp.core.base.angular.client.annotations.angularconfig.*;
-import com.jwebmp.core.base.angular.client.annotations.typescript.*;
-import com.jwebmp.core.plugins.*;
-import com.jwebmp.core.services.*;
-import jakarta.validation.constraints.*;
+import com.jwebmp.core.base.angular.client.annotations.angularconfig.NgScript;
+import com.jwebmp.core.base.angular.client.annotations.typescript.TsDependency;
+import com.jwebmp.core.base.angular.client.annotations.typescript.TsDevDependency;
+import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.services.IPage;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * The 3 meta tags *must* come first in the head; any other head content must come *after* these tags
@@ -30,18 +30,18 @@ import jakarta.validation.constraints.*;
  * file://
  */
 @PluginInformation(pluginName = "JQuery Plugin",
-        pluginDescription = "Adds JQuery to the Angular TS Build",
-        pluginUniqueName = "jwebmp-jquery",
-        pluginVersion = "3.4.0",
-        pluginCategories = "jquery",
-        pluginSubtitle = "JQuery is a widely used library for web components.",
-        pluginSourceUrl = "https://github.com/GedMarc/JWebMP-JQuery",
-        pluginWikiUrl = "https://github.com/GedMarc/JWebMP-JQuery/wiki",
-        pluginGitUrl = "https://github.com/GedMarc/JWebMP-JQuery",
-        pluginIconUrl = "bower_components/componenttemplate/componenttemplateicon.jpg",
-        pluginIconImageUrl = "bower_components/componenttemplate/componenttemplatelogo.jpg",
-        pluginOriginalHomepage = "https://jquery.com",
-        pluginDownloadUrl = "https://jwebmp.com/?p=ComponentTemplate")
+                   pluginDescription = "Adds JQuery to the Angular TS Build",
+                   pluginUniqueName = "jwebmp-jquery",
+                   pluginVersion = "3.4.0",
+                   pluginCategories = "jquery",
+                   pluginSubtitle = "JQuery is a widely used library for web components.",
+                   pluginSourceUrl = "https://github.com/GedMarc/JWebMP-JQuery",
+                   pluginWikiUrl = "https://github.com/GedMarc/JWebMP-JQuery/wiki",
+                   pluginGitUrl = "https://github.com/GedMarc/JWebMP-JQuery",
+                   pluginIconUrl = "bower_components/componenttemplate/componenttemplateicon.jpg",
+                   pluginIconImageUrl = "bower_components/componenttemplate/componenttemplatelogo.jpg",
+                   pluginOriginalHomepage = "https://jquery.com",
+                   pluginDownloadUrl = "https://jwebmp.com/?p=ComponentTemplate")
 
 @TsDependency(value = "jquery", version = "^3.7.1")
 @TsDependency(value = "jquery-migrate", version = "^3.4.1")
@@ -57,7 +57,6 @@ public class JQueryPageConfigurator
         //Nothing Needed
     }
 
-    @NotNull
     @Override
     public IPage<?> configure(IPage<?> page)
     {
