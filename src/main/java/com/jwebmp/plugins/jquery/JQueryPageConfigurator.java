@@ -30,21 +30,21 @@ import com.jwebmp.core.services.IPageConfigurator;
  * file://
  */
 @PluginInformation(pluginName = "JQuery Plugin",
-                   pluginDescription = "Adds JQuery to the Angular TS Build",
+                   pluginDescription = "Adds JQuery 4 to the Angular TS Build",
                    pluginUniqueName = "jwebmp-jquery",
-                   pluginVersion = "3.4.0",
+                   pluginVersion = "4.0.0",
                    pluginCategories = "jquery",
                    pluginSubtitle = "JQuery is a widely used library for web components.",
-                   pluginSourceUrl = "https://github.com/GedMarc/JWebMP-JQuery",
-                   pluginWikiUrl = "https://github.com/GedMarc/JWebMP-JQuery/wiki",
-                   pluginGitUrl = "https://github.com/GedMarc/JWebMP-JQuery",
-                   pluginIconUrl = "bower_components/componenttemplate/componenttemplateicon.jpg",
-                   pluginIconImageUrl = "bower_components/componenttemplate/componenttemplatelogo.jpg",
+                   pluginSourceUrl = "https://github.com/JWebMP/JWebMP",
+                   pluginWikiUrl = "https://github.com/JWebMP/JWebMP/wiki",
+                   pluginGitUrl = "https://github.com/JWebMP/JWebMP",
+                   pluginIconUrl = "",
+                   pluginIconImageUrl = "",
                    pluginOriginalHomepage = "https://jquery.com",
-                   pluginDownloadUrl = "https://jwebmp.com/?p=ComponentTemplate")
+                   pluginDownloadUrl = "https://jwebmp.com/")
 
-@TsDependency(value = "jquery", version = "^3.7.1")
-@TsDependency(value = "jquery-migrate", version = "^3.4.1")
+@TsDependency(value = "jquery", version = "^4.0.0")
+@TsDependency(value = "jquery-migrate", version = "^4.0.2")
 @TsDevDependency(value = "@types/jquery", version = "*")
 @NgScript(value = "node_modules/jquery/dist/jquery.js", sortOrder = 1)
 @NgScript(value = "node_modules/jquery-migrate/dist/jquery-migrate.js", sortOrder = 2)

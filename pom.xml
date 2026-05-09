@@ -16,7 +16,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.jwebmp.client</groupId>
+            <groupId>com.jwebmp</groupId>
             <artifactId>jwebmp-client</artifactId>
         </dependency>
 
@@ -44,14 +44,6 @@
             <dependency>
                 <groupId>com.guicedee</groupId>
                 <artifactId>fasterxml-bom</artifactId>
-                <type>pom</type>
-                <scope>import</scope>
-                <version>${guicedee.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.jwebmp</groupId>
-                <artifactId>jwebmp-bom</artifactId>
                 <type>pom</type>
                 <scope>import</scope>
                 <version>${guicedee.version}</version>
